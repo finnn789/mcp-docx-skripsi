@@ -1,12 +1,24 @@
-# Dependencies
+﻿# Dependencies
 node_modules/
-.npm
-.yarn/
+jspm_packages/
+bower_components/
+web_modules/
+.pnpm-store
 
 # Build output
 dist/
 build/
+build/Release
 out/
+.next/
+.nuxt/
+.output/
+.svelte-kit/
+**/.vitepress/dist
+**/.vitepress/cache
+.docusaurus/
+.vuepress/dist
+.temp/
 
 # Logs
 logs/
@@ -14,12 +26,25 @@ logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
 
 # Runtime & temp files
 *.tmp
 *.temp
+*.tsbuildinfo
 *.cache
 .cache/
+.parcel-cache/
+.fusebox/
 
 # Backup files
 *.bak
@@ -34,10 +59,33 @@ generated/
 *.html
 !templates/**/*.docx
 
+# Coverage
+coverage/
+*.lcov
+.nyc_output/
+lib-cov/
+.grunt/
+.lock-wscript
+
 # Environment variables
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
+
+# Package manager files
+.npm
+.eslintcache
+.stylelintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
 
 # OS files
 .DS_Store
@@ -46,15 +94,23 @@ desktop.ini
 
 # Editor & IDE
 .vscode/
+.vscode-test/
 .idea/
 *.swp
 *.swo
 *~
 
+# Serverless & cloud
+.serverless/
+.firebase/
+.dynamodb/
+.tern-port
+
 # Tesseract / Canvas cache
 tessdata/
 .tessdata/
 
-# Coverage & test output
-coverage/
-.nyc_output/
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+.vite/
