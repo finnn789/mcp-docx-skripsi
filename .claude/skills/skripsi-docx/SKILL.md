@@ -1,5 +1,5 @@
 ---
-name: mcp-docx-skripsi
+name: skripsi-docx
 description: This skill should be used when the user asks to "tulis BAB skripsi", "buat dokumen skripsi", "generate BAB I/II/III", "buatkan landasan teori", "tulis metodologi penelitian", "buat daftar pustaka", "preview dokumen", "tampilkan hasil docx", "buat diagram", "sisipkan tabel", "sisipkan gambar di skripsi", or mentions creating any academic thesis document section in Indonesian format. Activates the mcp-docx-skripsi MCP server workflow for generating .docx files.
 version: 1.0.0
 ---
